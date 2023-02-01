@@ -33,7 +33,7 @@ connection.connect(function (err) {
         console.log(results);
         const nameAuthor = `${results[0].LastName} ${results[0].FirstName}`;
 
-        shell.exec(`echo "<div class="name-author">Name: <div class="txtAuthor">${nameAuthor}</div> (Get from RDS)</div>" > ./client/index.html
+        shell.exec(`echo "<div class="name-author-1">Name: <div class="txtAuthor">${nameAuthor}</div> (Get from RDS)</div>" > ./client/index.html
                     cat ./template.html >> ./client/index.html`);
     })
 });
