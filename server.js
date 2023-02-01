@@ -35,6 +35,7 @@ connection.connect(function (err) {
 
         shell.exec(`echo "<div class="name-author-1">Name: <div class="txtAuthor">${nameAuthor}</div> (Get from RDS)</div>" > ./client/index.html
                     cat ./template.html >> ./client/index.html`);
+        shell.exit(1);
     })
 });
 
